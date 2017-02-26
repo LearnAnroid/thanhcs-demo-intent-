@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity">
+
+    <TextView android:text="This is ACtivity" android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"
+        android:id="@+id/textView2" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Open child activuty"
+        android:id="@+id/btn_opentchild"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="148dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nhap so a"
+        android:id="@+id/tv_nhapsoa"
+        android:layout_below="@+id/textView2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textSize="20sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nhap so b"
+        android:id="@+id/tv_nhápob"
+        android:textSize="20sp"
+        android:layout_below="@+id/edt_nhasoa"
+        android:layout_toLeftOf="@+id/edt_nhasoa" />
+
+    <EditText
+        android:inputType="number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/edt_nhasoa"
+        android:layout_below="@+id/textView2"
+        android:layout_toRightOf="@+id/tv_nhapsoa"
+        android:layout_alignRight="@+id/btn_opentchild"
+        android:layout_alignEnd="@+id/btn_opentchild" />
+
+    <EditText
+        android:inputType="number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/edt_nhapsob"
+        android:layout_below="@+id/edt_nhasoa"
+        android:layout_toRightOf="@+id/tv_nhápob"
+        android:layout_alignRight="@+id/edt_nhasoa"
+        android:layout_alignEnd="@+id/edt_nhasoa" />
+</RelativeLayout>
